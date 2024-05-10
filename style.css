@@ -1,0 +1,718 @@
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 16px;
+    background-color: #ffffff;
+}
+
+.home-page {
+    display: flex;
+    align-items: center;
+}
+
+.homepage-intro {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+
+.name {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    margin-left: 100px;
+    padding: 100px;
+}
+
+.description {
+    margin: 0;
+    font-weight: 200;
+}
+
+.container {
+    position: relative;
+    width: auto;
+    height: auto; 
+    margin: auto;
+    background-color: #f0f0f0; 
+}
+
+.homepage-image {
+    position: absolute;
+    transition: all 0.3s ease; 
+    line-height: 1.1 !important;
+}
+
+.homepage-image img {
+    display: block; 
+    max-width: 150px;
+}
+
+.homepage-image:hover {
+    transform: scale(1.1); 
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    font-size: 2em; 
+    min-height: 200px;
+    font-size: 50px;
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif !important;
+    font-weight: 400;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    font-size: 50px;
+}
+
+
+
+/* Projects Page */
+
+.projects-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-auto-rows: min-content;
+    box-sizing: border-box;
+    padding-top: 3.3vw;
+    padding-bottom: 3.3vw;
+    min-height: 33vh;
+    position: relative;
+    height: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    padding-bottom: 75%;
+    padding-top: 10%;
+    position: relative;
+    height: 0;
+    background-color: #FBF7ED;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 85%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    line-height: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 75%;
+    margin-bottom: 50px;
+}
+
+.project-overlay, .project-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(243, 219, 216, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    opacity: 0; 
+}
+
+.project-img:hover .project-overlay, .project-img:hover .project-text  {
+    opacity: 1;
+}
+
+.project-text {
+    font-family: Domaine;
+    font-size: 70px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    color: #C1111F;
+}
+
+
+/* Past Project Individual Pages*/
+
+.zara-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* font-family:  Saol Display, Georgia, Cambria, Times New Roman, Times, serif !important; */
+}
+
+.hotspots-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.project-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.past-projects-header {
+    font-family: Saol Display, Georgia, Cambria, Times New Roman, Times, 
+    serif !important;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    display: flex;
+    justify-content: start;
+    z-index: 1;
+}
+
+.project-name-header {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif !important;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 300;
+    z-index: 1;
+}
+
+.section-header {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.overview-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background as needed */
+}
+
+.section-header, .past-projects-header, .project-name-header, .project-description {
+    z-index: 2; 
+}
+
+.quote {
+    color: black;
+    /* font-family: Neue Montreal,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif; */
+    /* font-style: italic; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+
+.project-description {
+    font-family:  Montreal, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    text-transform:uppercase;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.project-role {
+    font-family:  Montreal, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.quote h2 {
+    font-family: Neue Montreal,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+.problem {
+    width: 70%;
+    padding: 20px;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+.problem-text {
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px; 
+    margin-right: 40px;
+}
+
+.problem-title {
+    size: 32px;
+    font-weight: 100;
+}
+
+.problem-subtitle {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 100;
+    color: #C1111F;
+}
+
+.problem-description {
+    size: 14px;
+    font-weight: 50;
+}
+
+.problem-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.research {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.research-title {
+    size: 32px;
+    font-weight: 100;
+}
+
+.research-subtitle {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 100;
+    color: #C1111F;
+}
+
+.research-description {
+    size: 14px;
+    font-weight: 50;
+}
+
+b {
+    font-weight: 400;
+}
+
+.img-horizontal-2 {
+    display: flex;
+    flex-direction: row;
+     margin-bottom: 50px;
+}
+
+.img-analysis {
+    width: 50%;
+    margin: 50px;
+}
+
+.research-text {
+    width: 70%;
+}
+
+.process {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    width: 80%;
+    background-image: url("assets/gingham-background.JPG")
+}
+
+#research-container {
+    background-image: url("assets/gingham-background.JPG");
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#text-container {
+    background-color: white;
+    margin: 20px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+
+.problem-solve {
+    width: 80%;
+    padding: 20px;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.process-title {
+    size: 32px;
+    font-weight: 100;
+}
+
+.process-subtitle {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 100;
+    color: #C1111F;
+}
+
+.process-description {
+    size: 14px;
+    font-weight: 50;
+}
+
+/* single, centered, horizontal image */
+.img-horizontal {
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.process-text {
+    background-color: white;
+    padding: 20px;
+}
+
+.img-horizontal-full {
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.half-page-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-text-2 {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 80%;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.horizontal-text-2 h2 {
+    font-size: 32px;
+    margin-right: 40px;
+    display: flex;
+    font-weight: 300;
+}
+
+.horizontal-text-2 h3 {
+    display: flex;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 200;
+}
+
+#title-bold {
+    font-weight: 400;
+}
+
+#text-semibold {
+    font-weight: 200px;
+}
+
+.solution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+#solution-title {
+    /* font-family: Saol Display, Georgia, Cambria, Times New Roman, Times, serif !important; */
+    font-weight: 300;
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont, 
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    /* font-style: italic; */
+    font-size: 40px;
+    background-color: #FBF7ED;
+}
+
+.solution img {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.solution-final {
+    background-color: #FBF7ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#before-after {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont, 
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+#before-after h2 {
+    margin-left: 130px;
+    margin-right: 130px;
+    font-weight: 200;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.conclusion {
+    background-image: url("assets/pink-gingham-background.jpg");
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+
+
+
+.note {
+    background-color: white;
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    width: 80%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;  
+}
+
+.note h3 {
+    display: flex;
+    align-items: center;
+}
+
+.break-above {
+    margin-top: 50px;
+}
+
+.col-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-box {
+    background-color: white;
+    border-color: #C1111F;
+    color: #C1111F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #C1111F;
+}
+
+.col-box h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.personas {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.title-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+}
+
+.title-img h2 {
+    width: 100%;
+    font-size: 32px;
+}
+
+.persona-description {
+    size: 14px;
+    margin: 20px;
+    font-weight: 200;
+    width: 80%;
+}
+
+/* modular */
+.problems-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#problems-title {
+    font-weight: 300;
+    font-size: 40px;
+    font-family: Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+.eliminate-margin-below {
+    margin-bottom: 0px;
+}
+
+.eliminate-margin-above {
+    margin-top: 0px;
+}
+
+.wide {
+    width: 100%;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+.changes-container {
+    background-image: url("assets/gingham-background.JPG");
+    /* margin-top: 50px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* color: DDEBD9; */
+}
+
+.changes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.changes-title {
+    font-size: 24px;
+    font-weight: 100;
+    font-family: Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    margin-top: 20px;
+}
+
+.green {
+    color: black;
+    border: 2px solid #DDEBD9;
+}
+
+.black {
+    color: black;
+    border: 2px solid black;
+}
+
+.changes-explanations {
+    font-family: Neue Montreal, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sketch-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

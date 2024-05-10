@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />        
+</head>
+<body class="zara-page">
+    <section class="project-overview">
+        <div class="overview-img">
+            <img src="assets/modular-background.jpg" alt="background image" class="background-image">
+            <div class="overlay-content">
+                <h1 class="section-header">
+                    <h2 class="past-projects-header">//Past Projects</h2>
+                    <p class="project-name-header">MODULAR</p>
+                </h1>
+                <h3 class="project-description" id="text-semibold">
+                    Project, Digital, Redesign, Prototype, Human-Centered Design
+                </h3>
+                <h3 class="project-role" id="text-semibold">
+                   (Designer, Group project)
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote">
+        <h2>
+            Goal: Create a more inclusive and frictionless onboarding experience 
+            that guides the user, and orders the steps in the correct way according 
+            to UX and psychology principles. 
+        </h2>
+    </div>
+    <img src="assets/modular1.jpg" class="img-horizontal-full">
+
+    <!-- Case Study: Problem-->
+    <section class="problem eliminate-margin-below">
+        <div class="problem-text">
+            <h2 class="problem-title" id="title-bold">The Client & Their Client</h2>
+            <h2 class="problem-subtitle">What is Modular and who uses it?</h2>
+            <h3 class="problem-description" id="text-semibold">
+                Modular is a growing tech startup startup creating a platform 
+                for <b>developing and optimizing AI systems</b> - Modular's tech stack
+                reduces the costs and pain points associated with deploying an
+                inference model to multiple hardware.
+            </h3>
+            <h3 class="problem-description" id="text-semibold">
+                Modular's target audience is <b>ML engineers</b>, working 
+                full time at a tech company that has many AI models 
+                in development.
+            </h3>
+        </div>
+        <div class="problem-text">
+            <h2 class="problem-title" id="title-bold">The Client's Goals</h2>
+            <h2 class="problem-subtitle">Why did Modular approach us with this task?</h2>
+            <h3 class="problem-description" id="text-semibold">
+                Modular's main problem was determining how to "improve" the
+                Modular onboarding process. Modular was <b>losing 50% of potential
+                users</b> simply due to the complexity of the onboarding stage. 
+                Modular hypothesized this dropoff was due to the fact that the
+                <b>onboarding process is complicated and long</b>, involving the use 
+                of a terminal to run commands. Similarily, the old onboarding
+                process brought the user to a <b>documentation page</b> that 
+                convoluted and elongated the onboarding process on the user's end.
+            </h3>
+        </div> 
+        </div>
+    </section>
+
+    <div class="problems-final">
+        <h2 class="eliminate-margin-below" id="problems-title">What problems are we solving?</h2>
+        <div class="col-box-wrapper break-above">
+            <div class="col-box wide">
+                <h2 class="col-box-text center-txt">
+                    1. How can the user avoid simply just visiting the 
+                    Modular documentation page?
+                </h2>
+                <h2 class="col-box-text center-txt">
+                    2. Do we want the user flow to be (1) "Create an Account" 
+                    and (2) "Install the SDK" or vice versa?
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- Case Study: Iterating + Problem-Solving Process-->
+
+    <!-- Breaking Problem Down -->
+    <h2 class="eliminate-margin-below break-above" id="problems-title">Breaking the problem down</h2>
+    <img src="assets/modular-flow-before-after.jpg" class="img-horizontal-full break-above">
+
+    <div class="changes">
+        <h2 class="eliminate-margin-below" id="problems-title">Key Changes</h2>
+        <div class="changes-container break-above">
+            <div class="col-box-wrapper">
+                <div class="col-box green">
+                    <h2 class="col-box-text center-txt">
+                        * Forked user flow, flow 1/2: Create account immediately 
+                        (user gets choice in order of flow)
+                    </h2>
+                </div>
+                <div class="col-box green">
+                    <h2 class="col-box-text center-txt">
+                        * Forked user flow, flow 2/2: Demo then create account
+                        (user gets choice in order of flow)
+                    </h2>
+                </div>
+                <div class="col-box green">
+                    <h2 class="col-box-text center-txt">
+                        * Modal for onboarding instructions instead of redirection 
+                        to documentation page 
+                    </h2>
+                </div>
+                <div class="col-box green">
+                    <h2 class="col-box-text center-txt">
+                        * Progress bar to show percentage of onboarding completed
+                    </h2>
+                </div>
+             </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!-- Change Explanations -->
+    <div class="changes-explanations">
+        <div class="research-text">
+            <h2 class="research-title break-above" id="title-bold">Changes Explained</h2>
+            <h2 class="research-title break-above" id="title-bold">
+                Flow One vs. Flow Two
+            </h2>
+            <h3 class="research-description" id="text-semibold">
+                Initially, we made two user-flows. <b>Flow One </b>was focused 
+                on having the user create an account and then install the 
+                application locally. <b>Flow Two</b> has the user install 
+                the application locally first, test it, and then create 
+                an account afterwards.  
+            </h3>
+            <h3 class="research-description" id="text-semibold">
+                <b>Benefit:</b> Former would be users that have experienced 
+                the Modular application before while the latter would be 
+                helpful for users that haven't played around with the 
+                application before.
+            </h3>
+
+            <h2 class="research-title break-above" id="title-bold">
+                Forked User Flow
+            </h2>
+            <h3 class="research-description" id="text-semibold">
+                Our main design that we reflected in our Lo-Fi Wireframe
+                was actually to <b>combine Flow One and Flow Two</b> to create
+                a Forked User Flow. Instead of choosing which user-flow that
+                would appeal to all users, we made the design choice to give
+                that <b>choice to the user</b>. Then at the end, all users will 
+                <b>end at the same position</b>, the user's <b>personal 
+                dashboard</b>.
+                
+            </h3>
+            <h3 class="research-description" id="text-semibold">
+                <b>Benefit:</b> Appeals to users that are both familiar and 
+                unfamiliar with the platform. so that they can get the most 
+                out of the platform based off their familiarity with the 
+                product. 
+            </h3>
+
+            <h2 class="research-title break-above" id="title-bold">
+                User Dashboard
+            </h2>
+            <h3 class="research-description" id="text-semibold">
+                We changed the user's <b>personal dashboard</b> after they 
+                created an account to be a <b>checklist</b>.
+                
+            </h3>
+            <h3 class="research-description" id="text-semibold">
+                <b>Benefit:</b> Ensures that the user has followed the 
+                necessary steps to set up the application locally. This
+                also solves the previous user pain point of being
+                re-directed to the un-intutitive documentation page.
+            </h3>
+        </div>
+    </div>
+
+    <section class="prototypes">
+        <h2 class="eliminate-margin-below break-above" id="problems-title">
+            Our Visual Design Progression
+        </h2>
+    </section>
+    
+    <!-- Sketches/Brainstorming -->
+    <section class="problem eliminate-margin-below">
+        <div class="problem-text">
+            <h2 class="problem-title" id="title-bold">Brainstorming & Iterating</h2>
+            <h2 class="problem-subtitle">Sketches</h2>
+            <h3 class="problem-description" id="text-semibold">
+                Each team member created multiple iterations of sketches, which
+                we then combined to form our initial low-fi sketch.
+            </h3>
+        </div>
+        <div class="sketch-img">
+            <img src="assets/modular-flow1.jpg" alt="Project Problem Image" class="problem-img">
+        </div> 
+        </div>
+    </section>
+
+    <section class="problem eliminate-margin-below">
+        <div class="sketch-img">
+            <img src="assets/modular-flow3.jpg" alt="Project Problem Image" class="problem-img">
+        </div> 
+        <div class="sketch-img">
+            <img src="assets/modular-flow2.jpg" alt="Project Problem Image" class="problem-img">
+        </div> 
+        </div>
+    </section>
+
+    <section class="problem eliminate-margin-below">
+        <div class="problem-text">
+            <h2 class="problem-title" id="title-bold">Brainstorming & Iterating</h2>
+            <h2 class="problem-subtitle">Low-Fi - First Iteration</h2>
+            <h3 class="problem-description" id="text-semibold">
+                We then created our first low-fi sketches...
+            </h3>
+        </div>
+        <div class="sketch-img">
+            <img src="assets/modular-low-fi1.jpg" alt="Project Problem Image" class="problem-img">
+        </div> 
+        </div>
+    </section>
+
+    <section class="problem eliminate-margin-below">
+        <div class="sketch-img">
+            <img src="assets/modular-lowfi2.jpg" alt="Project Problem Image" class="problem-img">
+        </div> 
+        <div class="problem-text">
+            <!-- <h2 class="problem-title" id="title-bold">Brainstorming & Iterating</h2> -->
+            <h2 class="problem-subtitle">Low-Fi - Second Iteration</h2>
+            <h3 class="problem-description" id="text-semibold">
+               ... which we updated as
+                we recieved client and peer feedback.
+            </h3>
+        </div>
+        </div>
+    </section>
+
+    <section class="research">
+        <div class="research-text">
+            <h2 class="research-title" id="title-bold">Final High-Fidelity Mockup</h2>
+            <h3 class="research-description" id="text-semibold">
+                After two final rounds of peer revision, client feedback
+                and team re-iterations, we developed our high-fidelity mockups!
+            </h3>
+            <img src="assets/modular-high-fidelity.jpg" alt="Project Problem Image" class="problem-img">
+        </div>
+    </section>
+
+    <!-- Final Solution-->
+    <section class="solution">
+        <div class="solution-final">
+            <h2 id="solution-title">Final Mockup</h2>
+            <img src="assets/modular-final.jpg" class="img-horizontal">
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <div class="note">
+            <h2>
+                <b>Client Feedback</b>
+            </h2>
+            <div class="col-box-wrapper">
+                <div class="col-box black">
+                    <h2 class="col-box-text center-txt">
+                        1. UI Refinement
+                    </h2><h2 class="col-box-text center-txt">
+                        Overall, our client mentioned that 
+                        some of our slides require some refinement, such as 
+                        decreasing the spacing between elements or 
+                        increasing the font size.
+                    </h2>
+                </div>
+                <div class="col-box black">
+                    <h2 class="col-box-text center-txt">
+                        2. Design Element Refinement
+                    </h2>
+                    <h2 class="col-box-text center-txt">
+                        E.g. adding a back button in between the modal screens,
+                        a "remind me later" functionality button in the create
+                        account section, and further pushing to explain to 
+                        the user why we need to take these certain steps in 
+                        the onboarding process.
+                    </h2>
+                </div>
+                <div class="col-box black">
+                    <h2 class="col-box-text center-txt">
+                        <h2 class="col-box-text center-txt">
+                            3. Next Steps
+                        </h2>
+                        <h2 class="col-box-text center-txt">
+                            We talked about some potential solutions such as
+                             creating a user home page that they can 
+                             personalize for the user. Another solution could 
+                             be to not have a homepage but instead just have a 
+                             dashboard of the most important information.
+                        </h2>
+                    </h2>
+                </div>
+             </div>
+            <h2>
+                <b>Takeaways + Experience</b>
+            </h2>
+            <h3 class="note break-above">
+                Overall, as a group, we really appreciated this project for 
+                giving us the opportunity to work through the full 
+                iterative-design process with a real startup in the industry.
+                Having the opportunity to talk to a real design lead and 
+                exchange feedback on our wireframes was one of our favorite 
+                moments of the semester as we were able to apply the concepts 
+                and skills that we learned in class into the real world. In 
+                the end, we were able to present our final prototype to our 
+                client while receiving overall positive feedback.
+            </h3>
+        </div>
+    </section>
+</body>
